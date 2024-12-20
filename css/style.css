@@ -1,99 +1,99 @@
-/* Resetting default browser styles */
+/* 通用样式 */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body Styles */
-body {
+html, body {
+    height: 100%; /* 确保页面占满整个屏幕高度 */
+    margin: 0;
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
 }
 
-/* Container Class */
+body {
+    display: flex;
+    flex-direction: column; /* 页面内容从上到下排列 */
+    min-height: 100vh; /* 确保页面最小高度为视口高度 */
+}
+
+/* 主体内容样式 */
 .container {
-    width: 80%;
-    margin: 0 auto;
+    flex: 1; /* 让主体内容占据屏幕的剩余空间 */
+    padding: 20px;
 }
 
-/* Header Styles */
+/* Header 样式 */
 header {
-    background-color: #333;
+    background: #333;
     color: #fff;
-    padding: 20px 0;
+    padding: 10px 20px;
 }
 
 header h1 {
-    text-align: center;
+    margin-bottom: 10px;
 }
 
 header nav ul {
-    display: flex;
-    justify-content: center;
     list-style: none;
-}
-
-header nav ul li {
-    margin: 0 15px;
+    display: flex;
+    gap: 15px;
 }
 
 header nav ul li a {
-    color: #fff;
     text-decoration: none;
+    color: #fff;
     font-weight: bold;
+    transition: color 0.3s;
 }
 
 header nav ul li a:hover {
-    color: #f39c12;
+    color: #ccc;
 }
 
-/* Blog Posts Section */
-.blog-posts {
-    background-color: #fff;
-    padding: 40px 0;
+/* Blog Posts 样式 */
+.blog-posts .posts {
+    margin-top: 20px;
 }
 
 .blog-posts .post {
     margin-bottom: 20px;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .blog-posts .post h2 a {
-    text-decoration: none;
     color: #333;
-}
-
-.blog-posts .post h2 a:hover {
-    color: #f39c12;
+    text-decoration: none;
 }
 
 .blog-posts .post .post-date {
-    color: #888;
-    font-size: 0.9em;
+    color: #999;
+    font-size: 0.9rem;
 }
 
 .blog-posts .post .read-more {
     display: inline-block;
     margin-top: 10px;
-    color: #f39c12;
     text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    transition: color 0.3s;
 }
 
 .blog-posts .post .read-more:hover {
-    text-decoration: underline;
+    color: #0056b3;
 }
 
-/* Footer Styles */
+/* Footer 样式 */
 footer {
-    background-color: #333;
+    background: #333;
     color: #fff;
     text-align: center;
-    padding: 20px 0;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+    padding: 10px 0;
+    position: relative; /* 确保 footer 正常定位 */
+    width: 100%; /* 填满页面宽度 */
 }

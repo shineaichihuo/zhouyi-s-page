@@ -26,7 +26,7 @@ body {
 
 /* Header 样式 */
 header {
-    background: #333;
+    background: #5245e2;
     color: #fff;
     padding: 10px 20px;
 }
@@ -66,7 +66,7 @@ header nav ul li a:hover {
 }
 
 .blog-posts .post h2 a {
-    color: #333;
+    color: #4b54e0;
     text-decoration: none;
 }
 
@@ -90,7 +90,7 @@ header nav ul li a:hover {
 
 /* Footer 样式 */
 footer {
-    background: #333;
+    background: #4947e4;
     color: #fff;
     text-align: center;
     padding: 10px 0;
